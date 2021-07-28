@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
 
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know about your fitness life</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" name="name" placeholder="Enter your name (Required)" id="name" required>
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" name="email" placeholder="Enter your email (Required)" id="email" required>
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" name="number" placeholder="Enter your age (Optional)" id="number" min="18" max="115">
+        <label for="" id="spec-label">How often do you work out? </label>
+        <select name="dropdown" id="dropdown">
+            <option value="1day">1 day a week</option>
+            <option value="2days">2 days a week</option>
+            <option value="3days">3 days a week</option>
+            <option value="4days">4 days a week</option>
+            <option value="5days">5 days a week</option>
+            <option value="6days">6 days a week</option>
+            <option value="7days">7 days a week</option>
+        </select>
+        <fieldset>
+            <div id="question-message">
+                Do you use a pre-workout? 
+            </div>
+            <label for="radio-question"></label>
+            <input type="radio" name="radio-question"> <span>Yes</span>
+            <label for="radio-question"></label>
+            <input type="radio" name="radio-question"> <span>No</span> 
+        </fieldset>
+        <fieldset>
+            <div id="question-message">What supplements do you use? </div>
+
+            <label for="Protein"></label>
+            <input type="checkbox" value="Protein"> <span>Protein</span>    
+            <label for="Creatine"></label>
+            <input type="checkbox" value="Creatine"> <span>Creatine</span>
+            <label for="Weight Gainer"></label>
+            <input type="checkbox" value="Weight Gainer"> <span>Weight Gainer</span>
+            <label for="Beta-Alanine"></label>
+            <input type="checkbox" value="Beta-Alanine"> <span>Beta-Alanine</span>
+            <label for="Branched-Chain Amino Acids"></label>
+            <input type="checkbox" value="Branched-Chain Amino Acids"> <span>Branched-Chain Amino Acids</span>
+            <label for="HMB"></label>
+            <input type="checkbox" value="HMB"> <span>HMB</span>
+        </fieldset>
+        <label for=""> Additional comments?
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+        <label for="">
+        <button id="submit">Submit the form </button>
+</label>
+
+    </form>
+    
+</body>
+</html>
